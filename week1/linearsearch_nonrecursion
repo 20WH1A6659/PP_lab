@@ -1,0 +1,33 @@
+lst = []
+size = int(input("enter no of array elements:"))
+for i in range(size):
+     n = int(input("enter the array elements of"))
+     lst.append(n)
+key = int(input("enter search element:"))
+flag =0
+for ele in range(len(lst)):
+    if lst[ele]== key:
+        flag = True
+        break
+if(flag == 1):
+        print('{} is found at {}'.format(key,ele+1))
+else:
+        print('{} is not found'.format(key))
+    
+'''enter no of array elements:5
+enter the array elements of12
+enter the array elements of32
+enter the array elements of42
+enter the array elements of52
+enter the array elements of62
+enter search element:52
+52 is found at 4
+
+enter no of array elements:5
+enter the array elements of12
+enter the array elements of32
+enter the array elements of42
+enter the array elements of52
+enter the array elements of62
+enter search element:44
+44 is not found'''
