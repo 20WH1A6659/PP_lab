@@ -1,0 +1,35 @@
+arr = []
+def linearsearch(arr,key,n):
+    for i in range(n):
+            if(arr[i] == key):
+                  return i+1
+    return -1
+n = int(input("enter the no of array elements:")
+   for ele in range(n):
+      num = int(input("enter array elements:")
+      arr.append(num)
+        print(arr)
+key = int(input("enter search element:")
+ls = linearsearch(arr,key,n)
+    if( ls == -1):
+          print('{} is not found'.format(key))
+    else:
+        print('{} is found at {} position'.format(key,ls))
+        
+'''enter no of array elements:5
+enter the array elements of12
+enter the array elements of32
+enter the array elements of42
+enter the array elements of52
+enter the array elements of62
+enter search element:52
+52 is found at 4
+
+enter no of array elements:5
+enter the array elements of12
+enter the array elements of32
+enter the array elements of42
+enter the array elements of52
+enter the array elements of62
+enter search element:44
+44 is not found'''
