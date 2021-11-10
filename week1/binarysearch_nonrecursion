@@ -1,0 +1,42 @@
+def binary_search(lst,n,x,low,high):
+    low = 0
+    high = len(lst)-1
+    while low<=high:
+        mid = (low+high)//2
+        if lst[mid]<ele:
+            low = mid+1
+        elif lst[mid]>ele:
+            high =mid-1
+        else:
+            return mid
+    return -1
+lst = []
+n = int(input("enter no of array elements:"))
+for i in range(n):
+    ele =int(input("enter  array elements:"))
+    lst.append(ele)
+print(lst)
+x = int(input("enter search element:"))
+pos = binary_search(lst,n,x,0,n-1)
+if(pos == -1):
+    print("element not found")
+else:
+    print("element found at  position:",(pos)+1)
+
+'''enter no of array elements:4
+enter  array elements:12
+enter  array elements:36
+enter  array elements:45
+enter  array elements:78
+[12, 36, 45, 78]
+enter search element:78
+element found at  position: 4
+
+enter no of array elements:4
+enter  array elements:12
+enter  array elements:36
+enter  array elements:45
+enter  array elements:24
+[12, 36, 45, 24]
+enter search element:48
+element not found'''
